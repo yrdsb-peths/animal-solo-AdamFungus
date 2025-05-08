@@ -21,5 +21,6 @@ public class Animal extends Actor
                 move(1);
             }
         }
+        removeTouching(Food.class);
     }
 }
