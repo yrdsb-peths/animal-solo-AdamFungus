@@ -14,6 +14,7 @@ public class Animal extends Actor
      */
     public void act()
     {
+        eat();
         if(Greenfoot.isKeyDown("left")) {
             move(-1);
         } else if(Greenfoot.isKeyDown("right")) {
@@ -21,6 +22,14 @@ public class Animal extends Actor
                 move(1);
             }
         }
-        removeTouching(Food.class);
+    }
+    
+    public void eat() {
+        if(isTouching(Food.class)) {
+            removeTouching(Food.class);
+            MyWorld world =(MyWorld) getWorld();
+            world.createFood();    
+        }
+        
     }
 }
