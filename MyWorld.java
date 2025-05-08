@@ -6,7 +6,12 @@ public class MyWorld extends World {
         Animal animal = new Animal();
         addObject(animal, 300, 300);
         
+        createFood();
+    }
+    public void createFood() {
         Food food = new Food();
-        addObject(food, 300, 0);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(food, x, y);
     }
 }
