@@ -16,11 +16,11 @@ public class Food extends Actor
     public void act()
     {
         setLocation(getX(), getY() + 1);
-        Y = getY();
-        if(Y >= 300) {
-            Dead dead = new Dead();
-            getWorld().addObject(dead, 300, 200);
-            getWorld().removeObject(this);
+        MyWorld world = (MyWorld) getWorld();
+        if(getY() >= world.getHeight())
+        {
+            world.gameOver();
+            world.removeObject(this);
         }
     }
 }

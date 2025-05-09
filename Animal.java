@@ -28,7 +28,8 @@ public class Animal extends Actor
         if(isTouching(Food.class)) {
             removeTouching(Food.class);
             MyWorld world =(MyWorld) getWorld();
-            world.createFood();    
+            world.createFood();   
+            world.increaseScore();
         }
         
     }
