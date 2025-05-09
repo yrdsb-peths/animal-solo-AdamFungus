@@ -6,6 +6,10 @@ public class MyWorld extends World {
         Animal animal = new Animal();
         addObject(animal, 300, 300);
         
+        
+        Score score = new Score();
+        addObject(score, 100, 20);
+        
         createFood();
     }
     public void createFood() {
