@@ -1,17 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class Animal here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Animal extends Actor
 {
-    /**
-     * Act - do whatever the Animal wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    GreenfootSound animalSound = new GreenfootSound("elephant.mp3");
+    
+    
     public void act()
     {
         eat();
@@ -30,7 +23,7 @@ public class Animal extends Actor
             MyWorld world =(MyWorld) getWorld();
             world.createFood();   
             world.increaseScore();
+            animalSound.play();
         }
-        
     }
 }
