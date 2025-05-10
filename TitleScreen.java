@@ -10,6 +10,7 @@ public class TitleScreen extends World
 {
     Label titleLabel = new Label("Hungry Kitty", 60);
     Label instructionLabel = new Label("press the space bar to start", 22);
+    Label instructionLabel1 = new Label("use < & > keys to move", 22);
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -18,6 +19,7 @@ public class TitleScreen extends World
     {
         super(600, 400, 1); 
         addObject(instructionLabel, 300, 250);
+        addObject(instructionLabel1, 300, 270);
         addObject(titleLabel, getWidth()/2, getHeight()/2);
         prepare();
     }
@@ -92,5 +94,6 @@ public class TitleScreen extends World
         removeObject(food2);
         removeObject(food3);
         removeObject(food6);
+        animal.setLocation(304,132);
     }
 }
