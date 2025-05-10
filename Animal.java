@@ -1,5 +1,11 @@
 import greenfoot.*;
 
+/**
+ * Class for the main character the player will utilizing
+ * 
+ * @author Adam fung 
+ * @version (May 2025)
+*/
 public class Animal extends Actor
 {
     GreenfootSound animalSound = new GreenfootSound("kitty.mp3");

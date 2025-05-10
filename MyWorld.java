@@ -1,4 +1,10 @@
 import greenfoot.*;
+/** 
+ * 
+ * 
+ * @author Adam fung 
+ * @version (May 2025)
+*/
 public class MyWorld extends World {
     Label scoreLabel;
     public MyWorld() {
