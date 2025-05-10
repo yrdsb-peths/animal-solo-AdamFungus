@@ -57,13 +57,13 @@ public class Animal extends Actor
         eat();
         if(Greenfoot.isKeyDown("left")) 
         {
-            move(-2);
+            move(-5);
             facing = 1;
             runAnimation();
         } 
         else if(Greenfoot.isKeyDown("right")) 
         {
-            move(2);
+            move(5);
             facing = 0;
             runAnimation();
         }
