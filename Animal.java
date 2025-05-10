@@ -9,10 +9,10 @@ public class Animal extends Actor
     {
         eat();
         if(Greenfoot.isKeyDown("left")) {
-            move(-1);
+            move(-2);
         } else if(Greenfoot.isKeyDown("right")) {
             {
-                move(1);
+                move(2);
             }
         }
     }
