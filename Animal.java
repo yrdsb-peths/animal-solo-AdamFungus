@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class Animal extends Actor
 {
-    GreenfootSound animalSound = new GreenfootSound("elephant.mp3");
+    GreenfootSound animalSound = new GreenfootSound("kitty.mp3");
     
     
     public void act()
