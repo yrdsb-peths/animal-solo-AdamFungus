@@ -2,11 +2,15 @@ import greenfoot.*;
 
 public class Food extends Actor
 {
+    GreenfootImage fish = new GreenfootImage("fish.png");
     static int count = 0;
     static int speed = 1;
 
     public void act()
     {
+        setImage(fish);
+        fish.scale(70, 50);
+        
         count++;
         setSpeed();
         setLocation(getX(), getY() + speed);
@@ -19,7 +23,7 @@ public class Food extends Actor
     }
 
     public void setSpeed() {
-        if (count == 300) {
+        if (count == 650) {
             speed ++;
             count = 0;
         }
