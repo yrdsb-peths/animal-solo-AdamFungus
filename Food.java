@@ -19,6 +19,7 @@ public class Food extends Actor
         {
             world.gameOver();
             world.removeObject(this);
+            speed = 1;
         }
     }
 
